@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/screens/product_screen.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -51,15 +52,6 @@ class HomeScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.05),
                           borderRadius: BorderRadius.circular(10),
-                          // boxShadow: [
-                          //   BoxShadow(
-                          //     color: Colors.black12.withOpacity(0.05),
-                          //     blurRadius: 2, //hieu ung mo cua bong
-                          //       //Dieu chinh kich thuoc bong neu duong thi bong
-                          //       //se roi khoi doi tuong, am thi thu hep lai
-                          //     spreadRadius: 1
-                          //   )
-                          // ]
                         ),
                         // O tim kiem 
                         child: TextFormField(
@@ -69,13 +61,15 @@ class HomeScreen extends StatelessWidget {
                                 color: Color(0xFFDB3022),
                             ),
                             border: InputBorder.none,
-                            label: Text(
-                              'Find your product',
-                              style: TextStyle(),
+                            hintText: "Find your product",
+                            hintStyle: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 18
                             )
                           ),
                         ),
                       ),
+                      // icon Notification
                       Container(
                         height: 50,
                         width: MediaQuery.of(context).size.width / 6,
@@ -93,6 +87,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 20,),
+                  // Banner Logo App
                   Container(
                     height: 150,
                     width: MediaQuery.of(context).size.width,
@@ -103,6 +98,7 @@ class HomeScreen extends StatelessWidget {
                     child: Image.asset('images/freed.png'),
                   ),
                   SizedBox(height: 20,),
+                  // List lua chon theo tung muc (All, Category, ...)
                   SizedBox(height: 50,
                     child: ListView.builder(
                         shrinkWrap: true,
@@ -163,7 +159,11 @@ class HomeScreen extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       InkWell(
-                                        onTap: (){},
+                                        onTap: (){
+                                          Navigator.push(context, MaterialPageRoute(
+                                              builder: (context) => ProductScreen()
+                                          ));
+                                        },
                                         child: ClipRRect(
                                           borderRadius: BorderRadius.circular(10),
                                           child: Image.asset(
@@ -174,6 +174,8 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ),
                                       ),
+                                      // Icon tym de len trn anh san pham su
+                                      // dung thuoc tinh Positioned trong Stack
                                       Positioned(
                                           right: 10,
                                           top: 10,
@@ -195,7 +197,7 @@ class HomeScreen extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-
+                                // Ten san pham, thong tin san pham va gia
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
                                   child: Column(
@@ -260,15 +262,16 @@ class HomeScreen extends StatelessWidget {
                       )
                   ),
                   SizedBox(height: 30,),
-                  // List danh sach san pham
+                  // List danh sach san pham hien thi GridView
                   GridView.builder(
                       itemCount: productTitle.length,
                       shrinkWrap: true,
                       physics: NeverScrollableScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          childAspectRatio: 0.6,
-                        // crossAxisSpacing: 2
+                          crossAxisCount: 2, //so luong cot
+                          childAspectRatio: 0.6, // Ty le chieu rong/chieu cao cua cac item
+                        // crossAxisSpacing: 2  //khoang cach giua cac cot
+                      //   mainAxisSpacing //Khoang cach giua cac hang
                       ),
                       itemBuilder: (context, index) {
                         return Container(
@@ -287,7 +290,11 @@ class HomeScreen extends StatelessWidget {
                                 child: Stack(
                                   children: [
                                     InkWell(
-                                      onTap: (){},
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(
+                                            builder: (context) => ProductScreen()
+                                        ));
+                                      },
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(10),
                                         child: Image.asset(

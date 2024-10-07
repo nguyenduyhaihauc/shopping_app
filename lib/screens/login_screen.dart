@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/screens/navigation_screen.dart';
 import 'package:shopping_app/screens/signup_screen.dart';
 
 import 'forgot_screen.dart';
@@ -62,7 +63,7 @@ class LoginScreen extends StatelessWidget {
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => HomeScreen()
+                                builder: (context) => NavigationScreen()
                             ));
                           },
                           child: Text(

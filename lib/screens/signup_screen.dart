@@ -70,7 +70,7 @@ class SignupScreen extends StatelessWidget {
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => HomeScreen()
+                                builder: (context) => LoginScreen()
                             ));
                           },
                           child: Text(

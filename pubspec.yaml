@@ -39,6 +39,10 @@ dependencies:
   introduction_screen: ^3.1.14
 #  sms_otp_auto_verify: ^2.2.0
   animated_bottom_navigation_bar: ^1.3.3
+#  Slider luot ben trong chi tiet san pham
+  fan_carousel_image_slider: ^0.1.2
+#  Thu vien su dung sao danh gia san pham
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
