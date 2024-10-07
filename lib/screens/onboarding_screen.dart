@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shopping_app/screens/home_screen.dart';
+import 'package:shopping_app/screens/login_screen.dart';
 
 // Man nay laf man gioi thieu ow dau de gioi thieu nhung noi dung
 // quan trong cua app
@@ -13,6 +14,7 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Cau hinh cho man hinh gioi thieu
     final pageDecoration = PageDecoration(
       titleTextStyle: TextStyle(
         fontSize: 28,
@@ -28,6 +30,7 @@ class OnboardingScreen extends StatelessWidget {
     return IntroductionScreen(
       key: introKey,
       globalBackgroundColor: Colors.white,
+      // cac man hinh se hien thi o man gi thieu
       pages: [
         PageViewModel(
           title: "Shop Now",
@@ -52,12 +55,13 @@ class OnboardingScreen extends StatelessWidget {
               width: 200,
             ),
             decoration: pageDecoration,
+            // Nut nhan o trang cuoi man gioi thieu
             footer: Padding(
                 padding: EdgeInsets.only(left: 15, right: 15, top: 50),
                 child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => HomeScreen()
+                          builder: (context) => LoginScreen()
                       ));
                     },
                     child: Text(
