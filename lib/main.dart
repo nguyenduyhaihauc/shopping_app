@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFFDB3022)
       ),
-      home: SplashScreen(),
+      home: NavigationScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

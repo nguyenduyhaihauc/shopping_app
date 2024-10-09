@@ -85,6 +85,11 @@ flutter:
     - images/splash1.png
     - images/splash2.png
     - images/splash3.png
+    - images/amazon_pay.png
+    - images/visa.png
+    - images/master_cards.png
+    - images/paypal.png
+    - images/gg_pay.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
