@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
                             prefixIcon: Icon(Icons.email), //Them Icon trong TextField
                           ),
                         ),
-                        SizedBox(height: 15,),
+                        const SizedBox(height: 15,),
                         TextFormField(
                           obscureText: true, //an mat khau
                           decoration: InputDecoration(
@@ -59,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                               ),)
                           ),
                         ),
-                        SizedBox(height: 50,),
+                        const SizedBox(height: 50,),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
@@ -81,11 +81,11 @@ class LoginScreen extends StatelessWidget {
                               )
                           ),
                         ),
-                        SizedBox(height: 10,),
+                        const SizedBox(height: 10,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Don't Have an Account?", style: TextStyle(
+                            const Text("Don't Have an Account?", style: TextStyle(
                               color: Colors.black54,
                               fontSize: 15
                             ),),

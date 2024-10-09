@@ -31,8 +31,8 @@ class _ForgotScreenState extends State<ForgotScreen> {
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(height: 20,),
-                Align(
+                const SizedBox(height: 20,),
+                const Align(
                   alignment: Alignment.topLeft,
                   child: Text(
                       "Forgot Password",
@@ -42,15 +42,15 @@ class _ForgotScreenState extends State<ForgotScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 60,),
-                Text(
+                const SizedBox(height: 60,),
+                const Text(
                   "Please enter your email address. You will receive a link"
                       " to create or set a new password via email",
                   style: TextStyle(
                     fontSize: 15
                   ),
                 ),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 TextFormField(
                   controller: emailController,
                   onChanged: (val) {
@@ -69,14 +69,14 @@ class _ForgotScreenState extends State<ForgotScreen> {
                             emailController.clear();
                         });
                       },
-                      child: Icon(
+                      child: const Icon(
                         CupertinoIcons.multiply,
                         color: Color(0xFFDB3022),
                       ),
                     )
                   ),
                 ),
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(
@@ -101,15 +101,15 @@ class _ForgotScreenState extends State<ForgotScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(height: 20,),
-                    Text('OR'),
+                    const SizedBox(height: 20,),
+                    const Text('OR'),
                     TextButton(
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(
                             builder: (context) => OTPScreen()
                         ));
                       },
-                      child: Text("Verify Using Number", style: TextStyle(
+                      child: const Text("Verify Using Number", style: TextStyle(
                           color: Color(0xFFDB3022),
                           fontSize: 15,
                         fontWeight: FontWeight.bold

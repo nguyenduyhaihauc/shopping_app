@@ -17,7 +17,7 @@ class ProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Product Overview",
           style: TextStyle(
             fontWeight: FontWeight.w700
@@ -85,7 +85,7 @@ class ProductScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   // Danh gia sao su dung thu vien raring_bar
                   Align(
                     alignment: Alignment.centerLeft,
@@ -106,8 +106,8 @@ class ProductScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                  SizedBox(height: 10,),
-                  Align(
+                  const SizedBox(height: 10,),
+                  const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "Cool, windy weather is on its way. Send him out the door in"
@@ -132,7 +132,7 @@ class ProductScreen extends StatelessWidget {
                           color: Color(0x1F989797),
                           borderRadius: BorderRadius.circular(30)
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.shopping_cart,
                             color: Color(0xFFDB3022),

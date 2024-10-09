@@ -33,8 +33,8 @@ class _OTPVerifyScreenState extends State<OTPVerifyScreen> {
             padding: EdgeInsets.symmetric(horizontal: 15),
             child: Column(
               children: [
-                SizedBox(height: 10,),
-                Align(
+                const SizedBox(height: 10,),
+                const Align(
                   alignment: Alignment.topLeft,
                   child: Text(
                     "Enter OTP",
@@ -44,15 +44,15 @@ class _OTPVerifyScreenState extends State<OTPVerifyScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 100,),
-                Text(
+                const SizedBox(height: 100,),
+                const Text(
                   "Please enter the OTP code that we have sent to you to your number"
                       ", please check your number and enter OTP to verify.",
                   style: TextStyle(
                       fontSize: 15
                   ),
                 ),
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
                 // TextFieldPin(
                 //     textController: textEditingController,
                 //     autoFocus: false,
@@ -70,7 +70,7 @@ class _OTPVerifyScreenState extends State<OTPVerifyScreen> {
                 //
                 //       });
                 //     }),
-                SizedBox(height: 30,),
+                const SizedBox(height: 30,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(

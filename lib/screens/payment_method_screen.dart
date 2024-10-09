@@ -23,7 +23,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Payment Method",
           style: TextStyle(
               fontWeight: FontWeight.w700
@@ -34,6 +34,18 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
         foregroundColor: Colors.black,
         elevation: 0,
         centerTitle: true,
+      ),
+      body: SafeArea(
+          child: Padding(
+              padding: EdgeInsets.all(20),
+              child: Center(
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
+              ),
+          )
       ),
     );
   }

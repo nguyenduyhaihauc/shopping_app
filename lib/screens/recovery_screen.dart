@@ -24,15 +24,15 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 20,),
-              Text(
+              const SizedBox(height: 20,),
+              const Text(
                 "Forgot Password",
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold
                 ),
               ),
-              SizedBox(height: 60,),
+              const SizedBox(height: 60,),
               TextFormField(
                 decoration: InputDecoration(
                     labelText: "Reset Code",
@@ -40,7 +40,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                     prefix: Icon(Icons.numbers),
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               TextFormField(
                 decoration: InputDecoration(
                   labelText: "New Password",
@@ -49,7 +49,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   suffixIcon: Icon(Icons.remove_red_eye)
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               TextFormField(
                 decoration: InputDecoration(
                   labelText: "Confirm Password",
@@ -58,7 +58,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   suffixIcon: Icon(Icons.remove_red_eye)
                 ),
               ),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
               ElevatedButton(
                 onPressed: () {
                   // Navigator.push(context, MaterialPageRoute(

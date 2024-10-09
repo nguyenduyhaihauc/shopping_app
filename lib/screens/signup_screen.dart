@@ -15,9 +15,9 @@ class SignupScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 50,),
+                  const SizedBox(height: 50,),
                   Image.asset("images/freed.png"),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: Column(
@@ -30,7 +30,7 @@ class SignupScreen extends StatelessWidget {
                             prefixIcon: Icon(Icons.person), //Them Icon trong TextField
                           ),
                         ),
-                        SizedBox(height: 15,),
+                        const SizedBox(height: 15,),
                         TextFormField(
                           decoration: InputDecoration(
                             labelText: "Enter Email",
@@ -38,7 +38,7 @@ class SignupScreen extends StatelessWidget {
                             prefixIcon: Icon(Icons.email), //Them Icon trong TextField
                           ),
                         ),
-                        SizedBox(height: 15,),
+                        const SizedBox(height: 15,),
                         TextFormField(
                           decoration: InputDecoration(
                             labelText: "Enter Number",
@@ -46,7 +46,7 @@ class SignupScreen extends StatelessWidget {
                             prefixIcon: Icon(Icons.numbers), //Them Icon trong TextField
                           ),
                         ),
-                        SizedBox(height: 15,),
+                        const SizedBox(height: 15,),
                         TextFormField(
                           obscureText: true, //an mat khau
                           decoration: InputDecoration(
@@ -56,7 +56,7 @@ class SignupScreen extends StatelessWidget {
                               suffixIcon: Icon(Icons.remove_red_eye)
                           ),
                         ),
-                        SizedBox(height: 15,),
+                        const SizedBox(height: 15,),
                         TextFormField(
                           obscureText: true, //an mat khau
                           decoration: InputDecoration(
@@ -66,7 +66,7 @@ class SignupScreen extends StatelessWidget {
                               suffixIcon: Icon(Icons.remove_red_eye)
                           ),
                         ),
-                        SizedBox(height: 50,),
+                        const SizedBox(height: 50,),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
@@ -88,11 +88,11 @@ class SignupScreen extends StatelessWidget {
                               )
                           ),
                         ),
-                        SizedBox(height: 10,),
+                        const SizedBox(height: 10,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Already have an Account?", style: TextStyle(
+                            const Text("Already have an Account?", style: TextStyle(
                                 color: Colors.black54,
                                 fontSize: 15
                             ),),

@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   // Banner Logo App
                   Container(
                     height: 150,
@@ -97,7 +97,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     child: Image.asset('images/freed.png'),
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   // List lua chon theo tung muc (All, Category, ...)
                   SizedBox(height: 50,
                     child: ListView.builder(
@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                         }
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   // Danh sach san pham keo ngang
                   Container(
                     height: 180,
@@ -210,7 +210,7 @@ class HomeScreen extends StatelessWidget {
                                             fontWeight: FontWeight.bold
                                         ),
                                       ),
-                                      SizedBox(height: 10,),
+                                      const SizedBox(height: 10,),
                                       SizedBox(
                                         width: 120,
                                         child: Text('Lorem Ipsum is simply dummy text '
@@ -230,7 +230,7 @@ class HomeScreen extends StatelessWidget {
                                           Text(
                                               '(' + reviews[index] + ')'
                                           ),
-                                          SizedBox(width: 10,),
+                                          const SizedBox(width: 10,),
                                           Text(
                                             price[index],
                                             style: TextStyle(
@@ -250,7 +250,7 @@ class HomeScreen extends StatelessWidget {
                         }
                     ),
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Align(
                     alignment: Alignment.centerLeft,
                       child: Text(
@@ -261,7 +261,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                       )
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   // List danh sach san pham hien thi GridView
                   GridView.builder(
                       itemCount: productTitle.length,
@@ -325,7 +325,7 @@ class HomeScreen extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              SizedBox(height: 10,),
+                              const SizedBox(height: 10,),
                               Text(
                                 productTitle[index],
                                 style: TextStyle(
@@ -333,7 +333,7 @@ class HomeScreen extends StatelessWidget {
                                     fontWeight: FontWeight.bold
                                 ),
                               ),
-                              SizedBox(height: 10,),
+                              const SizedBox(height: 10,),
                               Row(
                                 children: [
                                   Icon(
@@ -344,7 +344,7 @@ class HomeScreen extends StatelessWidget {
                                   Text(
                                       '(' + reviews[index] + ')'
                                   ),
-                                  SizedBox(width: 10,),
+                                  const SizedBox(width: 10,),
                                   Text(
                                     price[index],
                                     style: TextStyle(

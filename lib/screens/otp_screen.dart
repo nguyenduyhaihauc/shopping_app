@@ -17,8 +17,8 @@ class OTPScreen extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 25),
             child: Column(
               children: [
-                SizedBox(height: 10,),
-                Align(
+                const SizedBox(height: 10,),
+                const Align(
                   alignment: Alignment.topLeft,
                   child: Text(
                     "Forgot Password",
@@ -28,22 +28,22 @@ class OTPScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 60,),
-                Text(
+                const SizedBox(height: 60,),
+                const Text(
                   "Please enter your number. You will receive a OTP"
                       " to create or set a new password via number",
                   style: TextStyle(
                       fontSize: 15
                   ),
                 ),
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Enter Number",
                     border: OutlineInputBorder()
                   ),
                 ),
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(
